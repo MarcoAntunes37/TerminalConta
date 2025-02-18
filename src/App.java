@@ -17,6 +17,8 @@ public class App {
         System.out.println("Account balance: ");
         String balance = scanner.nextLine();
 
+        scanner.close();
+
         ContaTerminal terminal = new ContaTerminal(number, agency, holderName, balance);
 
         terminal.welcomeMessage();
